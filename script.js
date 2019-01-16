@@ -1,0 +1,27 @@
+$("#water").click(function(){
+    $("body").css("background","url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Clouds_over_the_Atlantic_Ocean.jpg/1200px-Clouds_over_the_Atlantic_Ocean.jpg)");
+    $("body").css("background-size","cover");
+    $(".Intro").show();
+    $(".Problem").hide();
+    $(".Benefit").hide();
+    $("#elevator").slideUp();
+    $("#elevator").delay(10000).show();
+});
+$("#tropos").click(function(){
+    $("body").css("background","url(https://www.shell.com/energy-and-innovation/the-energy-future/scenarios/shell-scenario-sky/_jcr_content/pagePromo/image.img.960.jpeg/1522157123504/clear-blue-sky.jpeg");
+    $("#elevator").css("margin-top:","400px;");
+    $("#elevator").fadeIn();
+    $("#elevator").slideUp();
+    $(".Intro").hide();
+    $(".Problem").show();
+    $(".Benefit").hide();
+});
+$("#exo").click(function(){
+    $("body").delay(1000).css("background","url(https://spacenews.com/wp-content/uploads/2018/05/24359364107_152b0152ff_k-879x485.jpg)");
+    $("body").delay(1000).css("background-size","cover");
+    $("elevator").delay(1000).delay().slideUp();
+    $(".Intro").delay(1000).hide();
+    $(".Problem").delay(1000).hide();
+    $(".Benefit").delay(1000).show();
+     $("#elevator").slideUp();
+});
